@@ -14,6 +14,7 @@
 | 箱线图 | 分类分布 / 异常值 | `sns.boxplot` |
 | 小提琴图 | 分类分布形态 | `sns.violinplot` |
 | 成对关系图 | 多变量两两关系 | `sns.pairplot` |
+| 热力图 | 矩阵数值 / 相关性 | `sns.heatmap` |
 
 ## 通用流程
 
@@ -100,9 +101,13 @@ plt.show()
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" style="background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
       <img src="./images/seaborn-pair.png" alt="成对关系图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
       <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">成对关系图 · <code>sns.pairplot</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-heatmap.png" alt="热力图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">热力图 · <code>sns.heatmap</code></p>
     </td>
   </tr>
 </table>
@@ -215,4 +220,19 @@ sns.violinplot(data=penguins, x='species', y='body_mass_g')
 
 ```python
 sns.pairplot(data=penguins, hue='species')
+```
+
+## 热力图 heatmap
+
+用**颜色深浅**展示矩阵数值大小，常用于相关性矩阵。
+
+```python
+advertising = pd.read_csv('data/advertising.csv')
+
+sns.heatmap(data=advertising.corr(),
+            annot=True,      # 在格子里显示数值
+            cmap='coolwarm', # 颜色映射：蓝 = 负相关，红 = 正相关
+            fmt='.2f')       # 数值保留两位小数
+plt.title('Correlation Matrix')
+plt.show()
 ```
