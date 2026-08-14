@@ -57,11 +57,11 @@ X_poly = poly.fit_transform(X)
 """
 poly5 = PolynomialFeatures(degree=5)
 trainX5 = poly5.fit_transform(trainX)
-testX5 = poly5.fit_transform(testX)
+testX5 = poly5.transform(testX)
 
 polyOverfit = PolynomialFeatures(degree=20)
 trainX20 = polyOverfit.fit_transform(trainX)
-testX20 = polyOverfit.fit_transform(testX)
+testX20 = polyOverfit.transform(testX)
 
 """
 3. 定义模型（线性回归模型）
@@ -97,7 +97,7 @@ y_pred1 = model.predict(testX5)
 test_loss1 = mean_squared_error(testY, y_pred1)
 y_train_pred1 = model.predict(trainX5)
 train_loss1 = mean_squared_error(trainY, y_train_pred1)
-ax[1].plot(X, model.predict(poly5.fit_transform(X)), 'r')
+ax[1].plot(X, model.predict(poly5.transform(X)), 'r')
 ax[1].text(-3, 1, f"测试误差: {test_loss1:.4f}\n训练误差: {train_loss1:.4f}")
 
 # 三、过拟合（20次多项式）
@@ -108,7 +108,7 @@ y_pred2 = model.predict(testX20)
 test_loss2 = mean_squared_error(testY, y_pred2)
 y_train_pred2 = model.predict(trainX20)
 train_loss2 = mean_squared_error(trainY, y_train_pred2)
-ax[2].plot(X, model.predict(polyOverfit.fit_transform(X)), 'r')
+ax[2].plot(X, model.predict(polyOverfit.transform(X)), 'r')
 ax[2].text(-3, 1, f"测试误差: {test_loss2:.4f}\n训练误差: {train_loss2:.4f}")
 
 plt.show()
