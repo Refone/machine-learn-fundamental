@@ -38,74 +38,74 @@ plt.show()
 
 ## 图表示例
 
-<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-hist.png" alt="直方图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">直方图 · <code>sns.histplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-kde.png" alt="核密度估计" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">核密度估计 · <code>sns.kdeplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-hist-kde.png" alt="直方图叠加核密度" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">直方图 + KDE · <code>kde=True</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-hist-hue.png" alt="分组直方图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">分组直方图 · <code>hue='species'</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-count.png" alt="计数图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">计数图 · <code>sns.countplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-scatter.png" alt="散点图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">散点图 · <code>sns.scatterplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-hexbin.png" alt="蜂窝图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">蜂窝图 · <code>sns.jointplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-kde-2d.png" alt="二维KDE" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">二维 KDE · <code>sns.kdeplot(x, y)</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-kde-scatter.png" alt="二维KDE叠加散点图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">二维 KDE + 散点 · <code>叠加</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-bar.png" alt="条形图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">条形图 · <code>sns.barplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-box.png" alt="箱线图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">箱线图 · <code>sns.boxplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-violin.png" alt="小提琴图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">小提琴图 · <code>sns.violinplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/seaborn-pair.png" alt="成对关系图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">成对关系图 · <code>sns.pairplot</code></p>
-  </div>
-
-</div>
+<table>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-hist.png" alt="直方图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">直方图 · <code>sns.histplot</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-kde.png" alt="核密度估计" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">核密度估计 · <code>sns.kdeplot</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-hist-kde.png" alt="直方图叠加核密度" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">直方图 + KDE · <code>kde=True</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-hist-hue.png" alt="分组直方图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">分组直方图 · <code>hue='species'</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-count.png" alt="计数图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">计数图 · <code>sns.countplot</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-scatter.png" alt="散点图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">散点图 · <code>sns.scatterplot</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-hexbin.png" alt="蜂窝图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">蜂窝图 · <code>sns.jointplot</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-kde-2d.png" alt="二维KDE" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">二维 KDE · <code>sns.kdeplot(x, y)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-kde-scatter.png" alt="二维KDE叠加散点图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">二维 KDE + 散点 · <code>叠加</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-bar.png" alt="条形图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">条形图 · <code>sns.barplot</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-box.png" alt="箱线图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">箱线图 · <code>sns.boxplot</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-violin.png" alt="小提琴图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">小提琴图 · <code>sns.violinplot</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" style="background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/seaborn-pair.png" alt="成对关系图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">成对关系图 · <code>sns.pairplot</code></p>
+    </td>
+  </tr>
+</table>
 
 ## 分布图
 

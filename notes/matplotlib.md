@@ -41,34 +41,34 @@ plt.show()
 
 ## 图表示例
 
-<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/matplotlib-plot.png" alt="折线图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">折线图 · <code>plt.plot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/matplotlib-bar.png" alt="柱状图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">柱状图 · <code>plt.bar</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/matplotlib-scatter.png" alt="散点图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">散点图 · <code>plt.scatter</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/matplotlib-box.png" alt="箱线图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">箱线图 · <code>plt.boxplot</code></p>
-  </div>
-
-  <div style="flex: 0 0 calc(50% - 8px); box-sizing: border-box; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-    <img src="./images/matplotlib-pie.png" alt="饼图" style="width: 100%; border-radius: 8px; display: block;" />
-    <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">饼图 · <code>plt.pie</code></p>
-  </div>
-
-</div>
+<table>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/matplotlib-plot.png" alt="折线图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">折线图 · <code>plt.plot</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/matplotlib-bar.png" alt="柱状图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">柱状图 · <code>plt.bar</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/matplotlib-scatter.png" alt="散点图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">散点图 · <code>plt.scatter</code></p>
+    </td>
+    <td align="center" style="width: 50%; background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/matplotlib-box.png" alt="箱线图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">箱线图 · <code>plt.boxplot</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" style="background: #191A1C; border: 1px solid #2a2c2e; border-radius: 12px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      <img src="./images/matplotlib-pie.png" alt="饼图" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align: center; margin: 10px 0 2px; font-weight: 600; color: #d5d8db;">饼图 · <code>plt.pie</code></p>
+    </td>
+  </tr>
+</table>
 
 ## 折线图 plot
 
