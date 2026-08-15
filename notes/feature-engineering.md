@@ -54,6 +54,7 @@ X = PCA(n_components=2).fit_transform(X)
 
 ![img](./images/pca-demo.png)
 
+奇异值分解示例：
 $$A = \begin{bmatrix} 1 & 1 \\ 2 & 2 \\ 0 & 0 \end{bmatrix} 
 = U\Sigma V^T 
 = \begin{bmatrix} 
@@ -71,6 +72,8 @@ $$A = \begin{bmatrix} 1 & 1 \\ 2 & 2 \\ 0 & 0 \end{bmatrix}
 \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} 
 \end{bmatrix}$$
 
+将 $U$ 减少两个维度，依然能够还原 $A$（矩阵$A$的秩只有1）
+
 $$A = \begin{bmatrix} 1 & 1 \\ 2 & 2 \\ 0 & 0 \end{bmatrix} 
 = U\Sigma V^T 
 = \begin{bmatrix} 
@@ -84,6 +87,32 @@ $$A = \begin{bmatrix} 1 & 1 \\ 2 & 2 \\ 0 & 0 \end{bmatrix}
 \begin{bmatrix} 
 \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} 
 \end{bmatrix}$$
+
+## 列转换器
+
+```python
+# 数值
+numerical_feats = ["年龄", "静息血压", "胆固醇", "最大心率", "运动后的ST下降", "主血管数量"]
+# 类别类特征
+category_feats = ["胸痛类型", "静息心电图结果", "峰值ST段的斜率", "地中海贫血"]
+# 二元特征
+binary_feats = ["性别", "空腹血糖", "运动性心绞痛"]
+
+ct = ColumnTransformer(transformers=[
+    ('num', StandardScaler(), numerical_feats),
+    ('cat', OneHotEncoder(drop='first'), category_feats),
+    ('bin', 'passthrough', binary_feats)
+])
+
+X_train = ct.fit_transform(X_train)
+X_test = ct.transform(X_test)
+```
+
+其中 `num` `cat` `bin` 只是别名，便于后续索引，
+
+`passthrougn` 为固定关键字
+
+`ColumnTransformer` 可以对数据分门别类进行处理
 
 ## 关于 transform 和 fit_transform
 
