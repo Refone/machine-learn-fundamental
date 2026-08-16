@@ -15,6 +15,19 @@
 
 ![img](./notes/images/监督学习一般流程.png)
 
+## 数学原理
+
+- [线性回归数学原理](./notes/math-linear-regression.md)
+- [逻辑回归数学原理](./notes/math-logistic-regression.md)
+
+## 特征工程
+
+- [特征工程](notes/feature-engineering.md)
+
+```
+低方差过滤 ｜ 相关系数法 ｜ 独热编码 ｜ 标准化 ｜ PCA | 列转换器
+```
+
 ## 核心 API
 
 | 子模块 | API | 作用简述 |
@@ -59,11 +72,3 @@
 ## 公式总结
 
 - [公式总结](notes/formula.md)
-
-## 特征工程
-
-- [特征工程](notes/feature-engineering.md)
-
-```
-低方差过滤 ｜ 相关系数法 ｜ 独热编码 ｜ 标准化 ｜ PCA | 列转换器
-```
